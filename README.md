@@ -1,6 +1,6 @@
 # dotfiles
 
-macOS 上的个人配置备份。用 [GNU Stow](https://www.gnu.org/software/stow/) 把每个软件的配置目录符号链接回家目录，改家目录里的文件就是在改这个仓库。
+macOS 上的个人配置备份。用 [GNU Stow](https://www.gnu.org/software/stow/) 把每个软件的配置目录符号链接到主目录，改主目录里的文件就是在改这个仓库。
 
 这个布局和 [webpro/dotfiles](https://github.com/webpro/dotfiles)、[Gabb-c/dotfiles](https://github.com/Gabb-c/dotfiles/blob/main/README.md) 一样：仓库里每个顶层目录是一个包，包内路径相对 `$HOME`。
 
@@ -34,7 +34,7 @@ brew install stow
 
 ```sh
 mkdir -p vim
-# 把配置放到和家目录相同的相对路径，例如 vim/.vimrc
+# 把配置放到和主目录相同的相对路径，例如 vim/.vimrc
 stow vim
 git add vim
 git commit -m "Track vim config"
